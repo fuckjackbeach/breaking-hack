@@ -1,10 +1,10 @@
 import pygame
 import sys
-pygame.init()
+
 
 
 class Game:
-    def init(self):
+    def __init__(self):
         pygame.init()
         pygame.display.set_caption("Breaking Hack")
         self.screen = pygame.display.set_mode((640 , 480))
@@ -14,8 +14,8 @@ class Game:
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                pygame.quit
-                sys.exit
+                    pygame.quit
+                    sys.exit
 
             pygame.display.update()
             self.clock.tick(60)
@@ -23,3 +23,4 @@ class Game:
 Game().run()
 
 #craftpix.net
+#20:05
